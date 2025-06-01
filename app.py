@@ -6,7 +6,7 @@ st.header("Histograma y Diagrama de dispersión")
 
 car_data= pd.read_csv("vehicles_us.csv")  # leer los datos
 
-hist_button = st.button('Construir histograma')  # crear un botón
+hist_button = st.button('Histograma')  # crear un botón
 
 if hist_button:  # al hacer clic en el botón
     # escribir un mensaje
@@ -16,7 +16,7 @@ if hist_button:  # al hacer clic en el botón
     # mostrar un gráfico Plotly interactivo
     st.plotly_chart(fig, use_container_width=True)
 
-disp_button = st.button('Construir diagrama de dispersión')  # crear un botón
+disp_button = st.button('Diagrama de dispersión')  # crear un botón
 
 if disp_button:  # al hacer clic en el botón
     # escribir un mensaje
